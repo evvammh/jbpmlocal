@@ -1,0 +1,22 @@
+package com.dxc.integral;
+
+rule "UWRule1"
+ruleflow-group "UWRuleGroup"
+
+when
+    u : User(amount < 25000)
+then
+    System.out.println("assigning to uwuser");
+    u.setName("uwuser");
+    u.setEmailid("integraluwuser@gmail.com");
+end
+
+rule "UWRule2"
+ruleflow-group "UWRuleGroup"
+when
+    u : User(amount >= 25000)
+then
+    System.out.println("assigning to wbadmin");
+    u.setName("uwuser2");
+    u.setEmailid("integraluwuser2@gmail.com");
+end
