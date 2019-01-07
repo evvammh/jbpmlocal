@@ -310,7 +310,7 @@ kcontext.setVariable("policySupportDocURL", docLocation);
 String uwEmailSubject = "Underwriting Approval Required for policy number : " + policyNumber;
 kcontext.setVariable("uwUserEmailSubject", uwEmailSubject);
 
-String uwEmailBody = "Kindly approve the policy number " + policyNumber + " before issuance.";
+String uwEmailBody = "Kindly approve the policy number " + policyNumber + " before issuance. Please login to Integral JBPM. Here is the link: <br/><br/> http://integral-presales-202452821.ap-southeast-1.elb.amazonaws.com/demo183/pnc-wf/jbpm-console/kie-wb.jsp";
 kcontext.setVariable("uwUserEmailBody", uwEmailBody);
 ]]></drools:script>
         </drools:onEntry-script>
@@ -413,7 +413,7 @@ kcontext.setVariable("uwuserEmailId",userOutput.getEmailid());
 String deEmailSubject = "Supporting Documents Required for policy : " + policyNumber;
 kcontext.setVariable("deUploadEmailSubject", deEmailSubject);
 
-String deEmailBody = "Kindly upload additional supporting document for policy number: " + policyNumber + ".";
+String deEmailBody = "Kindly upload additional supporting document for policy number: " + policyNumber + " using Integral Admin. Once document is uploaded, copy the document id and enter this document id in JBPM task. Here are the links: <br/><br/>Integral Admin: https://integral-presales-202452821.ap-southeast-1.elb.amazonaws.com/demo183/pnc/PolisyAsiaWeb/FirstServlet <br/> Integral JBPM: http://integral-presales-202452821.ap-southeast-1.elb.amazonaws.com/demo183/pnc-wf/jbpm-console/kie-wb.jsp";
 kcontext.setVariable("deUploadEmailBody", deEmailBody);
 ]]></drools:script>
         </drools:onEntry-script>
@@ -482,7 +482,7 @@ kcontext.setVariable("deUploadEmailBody", deEmailBody);
 String uwEmailSubject = "Additional Supporting document uploaded for policy : " + policyNumber;
 kcontext.setVariable("uwAckEmailSubject", uwEmailSubject);
 
-String uwEmailBody = "Additional Supporting document uploaded for policy number: " + policyNumber + ". Kinldy proceed to issue the policy";
+String uwEmailBody = "Additional Supporting document uploaded for policy number: " + policyNumber + ". Kinldy approve to issue the policy. Login to Integral JBPM. Here is the link: <br/><br/> http://integral-presales-202452821.ap-southeast-1.elb.amazonaws.com/demo183/pnc-wf/jbpm-console/kie-wb.jsp";
 kcontext.setVariable("uwAckEmailBody", uwEmailBody);
 ]]></drools:script>
         </drools:onEntry-script>
