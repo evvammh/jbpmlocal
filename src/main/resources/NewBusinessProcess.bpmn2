@@ -233,7 +233,7 @@ kcontext.setVariable("sumAssuredAmount", sumAssuredValue);
 String subject = "New Policy Creation Required for reference number : " + refNo;
 kcontext.setVariable("deUserEmailSubject", subject);
 
-String body = "Create a new VPM policy in Integral P&C System and enter the policy number in the task assigned to you in Integral JBPM. Here are the links: <br/><br/>Integral Admin: https://integral-presales-202452821.ap-southeast-1.elb.amazonaws.com/demo183/pnc/PolisyAsiaWeb/FirstServlet <br/> Integral JBPM: http://integral-presales-202452821.ap-southeast-1.elb.amazonaws.com/demo183/pnc-wf/jbpm-console/kie-wb.jsp";
+String body = "Create a new policy in Integral P&C System and enter the policy number in the task assigned to you in Integral JBPM. Here are the links: <br/><br/>Integral Admin: https://integral-presales-202452821.ap-southeast-1.elb.amazonaws.com/demo183/pnc/PolisyAsiaWeb/FirstServlet <br/> Integral JBPM: http://integral-presales-202452821.ap-southeast-1.elb.amazonaws.com/demo183/pnc-wf/jbpm-console/kie-wb.jsp";
 kcontext.setVariable("deUserEmailBody", body);
 ]]></drools:script>
         </drools:onEntry-script>
